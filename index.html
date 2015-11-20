@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="description" content="Magia Wars" />
+		<link rel="stylesheet" href="css/units.css" />
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery.collision.js"></script>
+		<script src="js/mw.js"></script>
+		<script src="js/classes.js"></script>
+	</head>
+	<body>
+		<div id="field">
+			<div id="p1unitMaker">
+				<div class="first active u1unit" id="u_warrior">warrior <br /> 10pt</div>
+				<div class="u1unit" id="u_peasant">peasant <br /> 5pt</div>
+				<div class="u1unit" id="u_mage">mage <br /> 20pt</div>
+				<div class="u1unit" id="u_archer">archer <br /> 5pt</div>
+				<div class="u1unit" id="u_scout">scout <br /> 2pt</div>
+				<div class="last u1unit" id="u_axeman">axeman <br /> 25pt</div>
+			</div>
+			<div id="p2unitMaker">
+				<div class="first active u2unit" id="u2_warrior">warrior <br /> 10pt</div>
+				<div class="u2unit" id="u2_peasant">peasant <br /> 5pt</div>
+				<div class="u2unit" id="u2_mage">mage <br /> 20pt</div>
+				<div class="u2unit" id="u2_archer">archer <br /> 5pt</div>
+				<div class="u2unit" id="u2_scout">scout <br /> 2pt</div>
+				<div class="last u2unit" id="u2_axeman">axeman <br /> 25pt</div>
+			</div>
+
+			<div style="position: absolute; bottom: 1px; left: 5px;">P2 Summon Points:  <span id="p2sp">0</span></div>
+			<div style="position: absolute; bottom: 20px; left: 5px;">Victory Points: <span id="p2vp">0</span></div>
+			<div style="position: absolute; top: 1px; right: 5px;">P1 Summon Points:  <span id="p1sp">0</span></div>
+			<div style="position: absolute; top: 20px; right: 5px;">Victory Points: <span id="p1vp">0</span></div>
+			<div class="scoreline" style="height: 500px; width: 5px; position: absolute; left: 0px;"></div>
+			<div class="scoreline" style="height: 500px; width: 5px; position: absolute; right: 0px;"></div>
+			<div id="activeline1" style="height: 45px; width: 5px; background: green; position: absolute; top: 48px; left: 5px;"></div>
+			<div id="activeline2" style="height: 45px; width: 5px; background: green; position: absolute; top: 48px; right: 5px;"></div>
+			<div id="gameOver">GAME OVER<br /><span class="winner"></span></div>
+		</div>
+		<div style="position: relative; left: 15px;">
+			<a href="#" onclick="mw.beginGame(); $(this).remove();">Begin Game</a><br />
+		</div>
+	</body>
+</html>

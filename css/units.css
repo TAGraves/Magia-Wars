@@ -1,0 +1,70 @@
+#field {
+	float: left; 
+	position: relative; 
+	width: 700px; 
+	height: 500px; 
+	border: 1px solid #000;
+}
+
+#p1unitMaker {
+	position: absolute;
+	left: 10px; 
+	width: 502px; 
+	height: 45px;
+	text-align: center;
+}
+
+#p2unitMaker {
+	position: absolute; 
+	right: 10px; 
+	bottom: 0px; 
+	width: 502px; 
+	height: 45px;
+	text-align: center;
+}
+
+.u1unit, .u2unit {
+	float: left; 
+	height: 43px; 
+	width: 80px; 
+	border: 1px solid #000;
+}
+
+#gameOver {
+	font-size: 72px;
+	margin-top: 200px;
+	text-align: center;
+	display: none;
+}
+
+.winner {
+	font-size: 25px;
+}
+
+.unit {
+	width: 40px; 
+	height: 40px;
+	position: absolute; 
+}
+
+.innerUnit {
+	width: 38px; 
+	height: 38px;
+	font-size: 10px;
+}
+
+.p1 {
+	border: 1px solid red;
+}
+
+.p2 {
+	border: 1px solid blue;
+}
+
+.u1, .u2 {
+	border-top: 1px solid #000;
+}
+
+.active {
+	border: 2px solid red !important;
+}
